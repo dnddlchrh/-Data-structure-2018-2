@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="star.cpp">
+    <ClCompile Include="fi.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

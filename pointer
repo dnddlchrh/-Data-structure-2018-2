@@ -1,0 +1,45 @@
+#include<stdio.h>
+
+int main() {
+	int arr[]={1,2,3,4,5};
+	int *marr=arr;
+	for(int i=0;i<5;i++)
+		printf("%d\t",marr[i]);
+	
+}
+/*int a,*b;
+	a=10;
+	b=&a; a와b연결 &주소
+	*b=100;
+	printf("%d\n",a);
+	printf("%d\n",b);
+
+	int a,b,*c,*d;
+	a=b=10;
+	c=&a;
+	d=&b;
+	*c=200;
+	*d=100;
+	printf("%d\n",a*b);
+		int arr[]={1,2,3,4,5};
+	for(int i=0;i<5;i++)
+		printf("%d\t",arr[i]);
+		printf("\n");
+		printf("%d\n",arr);*/
+    
+hdd 연속된 데이터 읽는 속도 빠름
+hdd is read speed fast connected data
+
+RAM 초당 5/GB 읽음, 메모리 할당 쉬움,방이 10억
+RAM read 5 per second, memory allocation easy,room 10billion
+
+strcpy(str복사)배열 두 개 필요(원본,복사할 공간)만들기
+malloc(메모리 할당, 괄호의 바이트 단위의 사이즈를 적으면 할당을 해줌)
+예 : int *n=(int*별 빠지면 안됨 캐스팅)malloc(4 int로 쓸 메모리 공간임을 명시)
+*n=100;(n이 가지고있는 주소로 찾아가서 100을 넣으세요.)
+printf("%d",*n);(n만 쓰면 n의 주소 *을 붙여야됨)
+배열할당
+int *n=(int *)malloc(sizeof(int)*10 );(시스템 상으로 int가 8바이트 일수도 있으니 sizeof사용추천)
+n[9]=10;가능
+char *des=(char *)malloc(size(char)*1024);(1024가 1kb,4096 4kb 쓰는 이유 한 블럭으로 묶기 위해서)
+char *arr="good day";(*로쓰면 변경이 안됨)

@@ -1,0 +1,6 @@
+int,char stack로 감
+char *str=(char *) malloc();
+malloc을 쓰면 heap로 간다 신중히 써야됨 free(str);안하면 메모리 누수생김
+stack이 빠름
+#include<stdio.h>
+#include<stdlib.h>

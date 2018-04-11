@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+char *strcat(char *str1,char *str2);
+
+int mstrcmp(char *,char *);
+int main(){
+char *input1=(char *)malloc(sizeof(char)*1024);
+char *input2=(char *)malloc(sizeof(char)*1024);
+scanf("%s %s",input1, input2);
+
+int cmp=mstrcmp(input1, input2);
+printf("%d",cmp);
+
+system("pause");
+return 0;
+
+}
+
+int mstrcmp(char *str1,char *str2){
+	int result =0,i=0;
+	do
+	{
+		result=str1[i]-str2[i];
+	}while(result==0&&str1[i]!='\0');
+	return result;
+}

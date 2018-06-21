@@ -1,0 +1,13 @@
+*{margin:0;padding: 0;text-decoration: none;list-style: none;}
+#wrap{height: 1000px;width: 1100px;margin: 0 auto;}
+#top{height: 78px;background: pink;width: 100%;position: relative;z-index: 5;}
+#top2{height: 78px;width: 1100px;position: fixed;margin: 0 auto;}
+.logo{float: left;width: 200px;}
+#zzz{width: 400px;height: 78px;float: right;text-align: center;padding-right: 100px;}
+.sub{width: 100px;height: 78px;float: left;}
+.sub > a{width: 100px;height: 78px;line-height: 78px;color: white;font-size: 18px;font-weight: bold;}
+.sub > ul > li{display: none;}
+.sub:hover > ul > li{display: block;height: 30px;width: 100px;float: left;background: pink;color: white;line-height: 30px;}
+.sub>ul>li>a{color: white;float: left;padding-left: 10px;font-weight: bold;}
+.sub:hover > a{background: white;color:pink;}
+.sub:hover{background: white;}
